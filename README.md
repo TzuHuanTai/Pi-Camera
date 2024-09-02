@@ -4,7 +4,7 @@
 
 Transform your Raspberry Pi into a powerful home security camera with the Pi Camera app. Using peer-to-peer (P2P) communication over WebRTC to make a decentralized monitor system, this app connects directly to your Raspberry Pi, allowing you to monitor live video with minimal delay and access historical footage.
 
-<img src="./img/index_dark.png" width="30%"><img src="./img/live_dark.jpg" width="30%"><img src="./img/records_dark.jpg" width="30%">
+<img src="./img/index_dark.png" width="30%"> <img src="./img/live_dark.jpg" width="30%"> <img src="./img/records_dark.jpg" width="30%">
 
 ## Key Features
 
@@ -38,7 +38,7 @@ Here is an example mqtt setting shown on HiveMQ.
 - **Notice!** The MQTT port is the port over WebSocket!
 
     <img src="./img/mqtt_cloud_sample.jpg" width=50%><br>
-    <img src="./img/setting_1.jpg" width="30%"><img src="./img/setting_2.jpg" width="30%">
+    <img src="./img/setting_1.jpg" width="30%"> <img src="./img/setting_2.jpg" width="30%">
 
 ### Step 2: Add a New Device in the Setting Page
 
