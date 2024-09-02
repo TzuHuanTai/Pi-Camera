@@ -80,5 +80,11 @@ For detailed setup instructions, please refer to the guide provided on my [Raspb
     <img src="./img/share_1.jpg" width="30%">
     <img src="./img/share_2.jpg" width="30%">
 
----
 
+
+## Contact & Support
+
+If you have any questions, need support, or just want to provide feedback, you can reach out via [GitHub Issues](https://github.com/TzuHuanTai/Pi-Camera/issues).
+Thank you for using Pi Camera!
+
+---
