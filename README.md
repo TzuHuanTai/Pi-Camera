@@ -23,10 +23,10 @@ Transform your Raspberry Pi into a powerful home security camera with the Pi Cam
 ### Step 0: Prerequisites
 
 1. A Raspberry Pi with a camera module attached.
-2. An MQTT server, STUN server, and TURN server set up and running.
+2. A MQTT server. (STUN and TURN servers are optional).
 
 ***Important Notice***
-- *MQTT Server (necessary): Please use the same setting on your raspberry pi camera program. You can setup own MQTT server, or choose some free plans including but not limited to [HiveMQ](https://www.hivemq.com), [EXMQ](https://www.emqx.com/en).*
+- *MQTT Server (necessary): This server exchanges initialized signals (ICE, SDP) to help p2p hole-punching. Please use the same setting on your raspberry pi camera program. You can setup own MQTT server, or choose some free plans including but not limited to [HiveMQ](https://www.hivemq.com), [EXMQ](https://www.emqx.com/en).*
 - *STUN Server (optional): If it's empty, the Google STUN server `stun:stun.l.google.com:19302` will be used by default.*
 - *TURN Server (optional): This is used for a few mobile networks or specific scenarios. If your NAT setup doesn't allow for p2p hole-punching, the TURN Server will help relay data transfers.*
 
@@ -35,7 +35,7 @@ Transform your Raspberry Pi into a powerful home security camera with the Pi Cam
 1. Go to Setting Page.
 2. Click 🌐 icon and paste your servers setting.
 Here is an example mqtt setting shown on HiveMQ.
-- **Notice!** The MQTT port is the port over WebSocket!
+- **Notice!** Please use ***WebSocket Port*** here!
 
     <img src="./img/mqtt_cloud_sample.jpg" width=50%><br>
     <img src="./img/setting_1.jpg" width="30%"> <img src="./img/setting_2.jpg" width="30%">
@@ -45,7 +45,7 @@ Here is an example mqtt setting shown on HiveMQ.
 1. Click ➕ icon
 2. The App is going to generate a `UUID`, which will be used on your raspberry pi later. *You can edit the `uuid` at the beginning, if you'd like to edit it in the future, please delete it and then add a new device again.*
 3. Enter a name in "Alias", which can be edited at any time in the future.
-4. Drag the ☰ can change the order of devices shown on selectors and home page.
+4. The new device will show on the list after clicking the confirm button. Drag the ☰ can change the order of devices displayed on selectors and home page.
 
     <img src="./img/add_devices.jpg" width="30%">
 
