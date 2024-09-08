@@ -25,6 +25,8 @@ Transform your Raspberry Pi into a powerful home security camera with the Pi Cam
 1. A Raspberry Pi with a camera module attached.
 2. A MQTT server. (STUN and TURN servers are optional).
 
+    <img src="./img/pi_zero_wi_shell.jpg" width=30%> <img src="./img/pi_zero_wo_shell.jpg" width=30%><br>
+
 ***Important Notice***
 - *MQTT Server (necessary): This server exchanges initialized signals (ICE, SDP) to help p2p hole-punching. Please use the same setting on your raspberry pi camera program. You can setup own MQTT server, or choose some free plans including but not limited to [HiveMQ](https://www.hivemq.com), [EXMQ](https://www.emqx.com/en).*
 - *STUN Server (optional): If it's empty, the Google STUN server `stun:stun.l.google.com:19302` will be used by default.*
@@ -43,23 +45,26 @@ Here is an example mqtt setting shown on HiveMQ.
 ### Step 2: Add a New Device in the Setting Page
 
 1. Click ➕ icon
-2. The App is going to generate a `UUID`, which will be used on your raspberry pi later. *You can edit the `uuid` at the beginning, if you'd like to edit it in the future, please delete it and then add a new device again.*
-3. Enter a name in "Alias", which can be edited at any time in the future.
-4. The new device will show on the list after clicking the confirm button. Drag the ☰ can change the order of devices displayed on selectors and home page.
+2. The app will generate a `UUID`, which will be used on your Raspberry Pi later.  
+    *If you'd like to assign a specific ID to the device, you can edit the `UUID` at the beginning. Once confirmed, the `UUID` cannot be edited; you will need to delete the device and add a new one if changes are needed.*
+3. Enter a name in the "Alias", which can be edited at any time in the future.
+4. The new device will appear on the list after clicking the confirm button. You can change the order of devices on the selectors and home page by dragging the ☰ icon.
 
     <img src="./img/add_devices.jpg" width="30%">
 
 ### Step 3: Run Camera Software on Raspberry Pi
 
-Run the `pi_webrtc` in the background with the same `uuid` and `mqtt` setting.
+1. Download the `pi_webrtc` software from the [release page](https://github.com/TzuHuanTai/RaspberryPi_WebRTC/releases).
 
-Here shows a example for `uuid` = *`home-pi-zero2w`*. **Notice!** The MQTT port in the command line is ***NOT*** the port over WebSocket `8884`, but the MQTT protocol port `8883`!
+2. Run the `pi_webrtc` on your Raspberry Pi. Here’s an example where `uid` is set to `home-pi-zero2w`. 
 
-```bash
-/path/to/pi_webrtc --device=/dev/video0 --fps=30 --width=1280 --height=960 --v4l2_format=h264 --hw_accel --mqtt_host=example.s1.eu.hivemq.cloud --mqtt_port=8883 --mqtt_username=hakunamatata --mqtt_password=WonderfulPhrase --uid=home-pi-zero2w --record_path=/mnt/ext_disk/video/
-```
+    ***Important:*** The MQTT port specified in the command is **NOT the WebSocket port** (8884), but the standard **MQTT protocol port** (8883).
 
-For detailed setup instructions, please refer to the guide provided on my [RaspberryPi_WebRTC](https://github.com/TzuHuanTai/RaspberryPi_WebRTC) page.
+    ```bash
+    /path/to/pi_webrtc --device=/dev/video0 --fps=30 --width=1280 --height=960 --v4l2_format=h264 --hw_accel --mqtt_host=example.s1.eu.hivemq.cloud --mqtt_port=8883 --mqtt_username=hakunamatata --mqtt_password=WonderfulPhrase --uid=home-pi-zero2w --record_path=/mnt/ext_disk/video/
+    ```
+
+For detailed setup instructions, please refer to the guide on the [RaspberryPi_WebRTC](https://github.com/TzuHuanTai/RaspberryPi_WebRTC) page.
 
 ### Step 4: Verify the Connection
 
