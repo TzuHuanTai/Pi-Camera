@@ -1,8 +1,16 @@
-# Pi Camera
+<p align=center>
+    <img src="img/icon.png" width="200" alt="Pi 4b latency demo">
+</p>
+<h1 align="center">
+ Pi Camera
+ <br>
+</h1>
 
+<p align=center>
 <a href="https://play.google.com/store/apps/details?id=com.tzu.huan.tai.picamera"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="168"></a>
+</p>
 
-Transform your Raspberry Pi into a powerful home security camera with the Pi Camera app. Using peer-to-peer (P2P) communication over WebRTC to make a decentralized monitor system, this app connects directly to your Raspberry Pi, allowing you to monitor live video with minimal delay and access historical footage.
+Transform your Raspberry Pi into a powerful home security camera with the Pi Camera app. Using peer-to-peer (P2P) communication over WebRTC to make a decentralized monitor system, this app connects directly to your Raspberry Pi, allowing you to monitor live video with minimal delay and access historical footage. [[demo video](https://www.youtube.com/watch?v=JZ5bcSAsXog)]
 
 <img src="./img/index_dark.png" width="30%"> <img src="./img/live_dark.jpg" width="30%"> <img src="./img/records_dark.jpg" width="30%">
 
