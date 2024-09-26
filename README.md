@@ -64,12 +64,12 @@ Here is an example mqtt setting shown on HiveMQ.
 
 1. Download the `pi_webrtc` software from the [release page](https://github.com/TzuHuanTai/RaspberryPi_WebRTC/releases).
 
-2. Run the `pi_webrtc` on your Raspberry Pi. Here’s an example where `uid` is set to `home-pi-zero2w`. 
+2. Run the `pi_webrtc` on your Raspberry Pi. Here’s an example where the device `uid` is set to `abcdefg-123-1qaz2wsx` in the app.
 
     ***Important:*** The MQTT port specified in the command is **NOT the WebSocket port** (8884), but the standard **MQTT protocol port** (8883).
 
     ```bash
-    /path/to/pi_webrtc --device=/dev/video0 --fps=30 --width=1280 --height=960 --v4l2_format=h264 --hw_accel --mqtt_host=example.s1.eu.hivemq.cloud --mqtt_port=8883 --mqtt_username=hakunamatata --mqtt_password=WonderfulPhrase --uid=home-pi-zero2w --record_path=/mnt/ext_disk/video/
+    /path/to/pi_webrtc --device=/dev/video0 --fps=30 --width=1280 --height=960 --v4l2_format=h264 --hw_accel --mqtt_host=example.s1.eu.hivemq.cloud --mqtt_port=8883 --mqtt_username=hakunamatata --mqtt_password=WonderfulPhrase --uid=abcdefg-123-1qaz2wsx --record_path=/mnt/ext_disk/video/
     ```
 
 For detailed setup instructions, please refer to the guide on the [RaspberryPi_WebRTC](https://github.com/TzuHuanTai/RaspberryPi_WebRTC) page.
