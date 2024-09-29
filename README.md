@@ -36,7 +36,7 @@ Transform your Raspberry Pi into a powerful home security camera with the Pi Cam
     <img src="./img/pi_zero_wi_shell.jpg" width=30%> <img src="./img/pi_zero_wo_shell.jpg" width=30%><br>
 
 ***Important Notice***
-- *MQTT Server (necessary): This server exchanges initialized signals (ICE, SDP) to help p2p hole-punching. Please use the same setting on your raspberry pi camera program. You can setup own MQTT server, or choose some free plans including but not limited to [HiveMQ](https://www.hivemq.com), [EXMQ](https://www.emqx.com/en).*
+- *MQTT Server (necessary): ***It must be over SSL/TLS!*** This server exchanges initialized signals (ICE, SDP) to help p2p hole-punching. Please use the same setting on your raspberry pi camera program. You can setup own MQTT server, or choose some free plans including but not limited to [HiveMQ](https://www.hivemq.com), [EXMQ](https://www.emqx.com/en).*
 - *STUN Server (optional): If it's empty, the Google STUN server `stun:stun.l.google.com:19302` will be used by default.*
 - *TURN Server (optional): This is used for a few mobile networks or specific scenarios. If your NAT setup doesn't allow for p2p hole-punching, the TURN Server will help relay data transfers.*
 
