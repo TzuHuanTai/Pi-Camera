@@ -97,7 +97,12 @@ For detailed setup instructions, please refer to the guide on the [RaspberryPi_W
 
 ## Contact & Support
 
-If you have any questions, need support, or just want to provide feedback, you can reach out via [GitHub Issues](https://github.com/TzuHuanTai/Pi-Camera/issues).
+If you have any questions, need support, or just want to provide feedback, you can reach out via 
+
+1. [Google Group](https://groups.google.com/g/pi-camera)
+
+2. [GitHub Issues](https://github.com/TzuHuanTai/Pi-Camera/issues)
+
 Thank you for using Pi Camera!
 
 ---
